@@ -105,9 +105,21 @@ h1, h2, h3, h4, h5, h6 {
   transition: color .15s ease-in-out;
 }
 
+.header nav.main-menu > ul li > a {
+  border-bottom: 0px solid #FFFFFF;
+  transition: border-bottom .15s ease-in-out;
+}
+
 .header nav > ul li > a:active,
 .header nav > ul li > a:hover {
   color: #FFFFFF;
+}
+
+.header nav.main-menu > ul li > a:active,
+.header nav.main-menu > ul li > a:hover,
+.header nav.main-menu  > ul li > a.active {
+  color: #FFFFFF;
+  border-bottom: 3px solid #FFFFFF;
 }
 
 .brand p {
