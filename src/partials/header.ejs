@@ -1,21 +1,25 @@
-<div class="brand">
-  <h1><%= site.title %></h1>
-  <p><%= site.subtitle %></p>
-</div>
-<nav class="main-menu">
-  <ul>
-    <% site.mainMenu.forEach((menu) => { %>
-      <li><a href="<%= menu.link %>"><%= menu.label %></a></li>
-    <% }) %>
-  </ul>
-</nav>
-<nav class="social-menu">
-  <ul>
-    <% site.socialMenu.forEach((menu) => { %>
-      <li><a href="<%= menu.link %>"><%= menu.label %></a></li>
-      <li>
-        <a href="<%= menu.link %>"><i class="fab fa-2x <%= menu.icon %>"></i></a>
-      </li>
-    <% }) %>
-  </ul>
-</nav>
+<header>
+  <div class="brand">
+    <h1>
+      <img src="img/felipeassis.jpg" alt="Avatar" class="my-avatar">
+      <%= site.title %>
+    </h1>
+  </div>
+  <nav class="main-menu">
+    <ul>
+      <% site.mainMenu.forEach((menu) => { %>
+        <li><a href="<%= menu.link %>"><%= menu.label %></a></li>
+      <% }) %>
+    </ul>
+  </nav>
+  <nav class="social-menu">
+    <ul>
+      <% site.socialMenu.forEach((menu) => { %>
+        <li><a href="<%= menu.link %>"><%= menu.label %></a></li>
+        <li>
+          <a href="<%= menu.link %>"><i class="fab fa-2x <%= menu.icon %>"></i></a>
+        </li>
+      <% }) %>
+    </ul>
+  </nav>
+</header>
